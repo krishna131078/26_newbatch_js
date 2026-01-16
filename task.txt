@@ -1,0 +1,6 @@
+pos//neg
+poss--->even/odd
+even pos--->sum
+odd pos--->mul
+even neg--->sub
+odd neg--->div
