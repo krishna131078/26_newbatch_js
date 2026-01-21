@@ -1,0 +1,6 @@
+c//cpp
+2---->entry--->exit 
+1.for an while
+2.do while
+for in 
+for of for each
