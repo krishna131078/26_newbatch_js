@@ -108,19 +108,38 @@
 // }
 
 // 121
-var num=121
+// var num=121
+// var sum=0
+// var temp=num
+// while(num>0)
+// {
+//     var rem=num%10//121%10=1//12%10=2//1%10=1
+//     sum=(sum*10)+rem//0+1=1//10+2=120+1=121
+//     num=Math.floor(num/10)//121/10=12//12/10=1/10=00...
+// }
+// if(temp==sum)
+// {
+//     console.log("palindrome")
+// }
+// else{
+//     console.log("not palindrome")
+// }
+// 153---->1+27+125=153
+var num=153
 var sum=0
 var temp=num
-while(num>0)
-{
-    var rem=num%10//121%10=1//12%10=2//1%10=1
-    sum=(sum*10)+rem//0+1=1//10+2=120+1=121
-    num=Math.floor(num/10)//121/10=12//12/10=1/10=00...
+do{
+    var rem=num%10//153%10=3//15%10=5//125//1
+    sum=sum+(rem*rem*rem)//0+27=27//27+125=152+1=153
+    num=Math.floor(num/10)//15//15/10=1
+
+
 }
+while(num>0);
 if(temp==sum)
 {
-    console.log("palindrome")
+    console.log("armstrng")
 }
 else{
-    console.log("not palindrome")
+    console.log("not armstrng")
 }
