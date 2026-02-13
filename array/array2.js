@@ -44,3 +44,18 @@ console.log(res)
 
 let arr1=['jay','dhyey','naman']
 let arr2=[]
+
+for(let i=0;i<arr1.length;i++)
+{
+    console.log(arr1[i].split("").reverse().join(""))
+
+    if(arr1[i].split("").reverse().join("")==arr1[i])
+    {
+        console.log(arr2.push(arr1[i]))
+    }
+}
+//n a m a n
+//naman
+//j a y
+// y a j
+//
