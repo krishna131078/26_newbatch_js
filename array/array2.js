@@ -137,9 +137,9 @@ var upper=[]
 // let nums=[1,2,3,4,5]
 // let mul=nums.reduce((a,b)=>a*b,1)
 // console.log(mul)
-let nums=[1,2,3,4,5]
-let max=nums.reduce((a,b)=>a>b? a:b)
-console.log(max)
+// let nums=[1,2,3,4,5]
+// let max=nums.reduce((a,b)=>a>b? a:b)
+// console.log(max)
 // let salary=[10000,2000,3000,40000]
 // map---->//whole array
 // filter---->data filterout
@@ -147,3 +147,40 @@ console.log(max)
 // sort---->whole array
 // find---->filter out
 // reduce---->single value
+// var user={
+//     id:1,
+//     name:"chirag",
+//     age:22,
+
+// }
+// console.log(user)
+var users=[
+    {id:1,
+        name:"dhyey",
+        age:23
+    },
+    {id:2,
+        name:"jay",
+        age:24
+    },
+    {id:3,
+        name:"marmik",
+        age:25
+    }
+]
+// console.log(users[0].id)
+// for(let i=0;i<users.length;i++)
+// {
+//     console.log(users[i])
+// }
+// users.forEach((user)=>{
+//     console.log(user.name+user.age)
+// })
+
+let newarr=users.map((user)=>{
+    return user.age +" "+user.id
+})
+console.log(newarr)
+array.forEach(element => {
+    
+});
