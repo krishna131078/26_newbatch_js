@@ -125,9 +125,25 @@ var upper=[]
 // let nums=[10,30,20,50]
 // let  newnum=nums.find((n)=>n>20)
 // console.log(newnum)
- let emp=[
-    {name:"jay",age:22},
-    {name:"dhyey",age:20}
-]
-let newemp=emp.find((n)=>n.age==22)
-console.log(newemp)
+//  let emp=[
+//     {name:"jay",age:22},
+//     {name:"dhyey",age:20}
+// ]
+// let newemp=emp.find((n)=>n.age==22)
+// console.log(newemp)
+// let nums=[10,20,30,40]
+// let sum=nums.reduce((a,b)=>a+b,0)
+// console.log(sum)
+// let nums=[1,2,3,4,5]
+// let mul=nums.reduce((a,b)=>a*b,1)
+// console.log(mul)
+let nums=[1,2,3,4,5]
+let max=nums.reduce((a,b)=>a>b? a:b)
+console.log(max)
+// let salary=[10000,2000,3000,40000]
+// map---->//whole array
+// filter---->data filterout
+// flatmap---->[[]]
+// sort---->whole array
+// find---->filter out
+// reduce---->single value
