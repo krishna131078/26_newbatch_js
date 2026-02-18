@@ -95,11 +95,39 @@ var upper=[]
 //     })
 // })
 // console.log(filterdata)
-var data=[["sachin","kohli"],["rohit","raina"],["gill","pandya"]]
-var filterdata=data.flatMap((user)=>{
-    // return user
-    return user.filter((d)=>{
-        return d.length==6
-    })
-})
-console.log(filterdata)
+// var data=[["sachin","kohli"],["rohit","raina"],["gill","pandya"]]
+// var filterdata=data.flatMap((user)=>{
+//     // return user
+//     return user.filter((d)=>{
+//         return d.length==6
+//     })
+// })
+// console.log(filterdata)
+// let user=["sachin","amit","parth","hardik"]
+// // user.sort()
+// // console.log(user)
+// let newuser=user.sort((a,b)=>a.length-b.length)
+// console.log(newuser)
+// let salary=[1000,500,300,400]
+// let newsalary=salary.sort((a,b)=>b-a)
+// console.log(newsalary)
+
+// let emp=[
+//     {name:"jay",age:22},
+//     {name:"dhyey",age:20}
+// ]
+// let result=emp.sort((a,b)=>a.age-b.age)
+// console.log(result)
+// let user=["sachin","amit","parth","hardik"]
+// let newuser=user.find((u)=>u=="amit")
+// console.log(newuser)
+
+// let nums=[10,30,20,50]
+// let  newnum=nums.find((n)=>n>20)
+// console.log(newnum)
+ let emp=[
+    {name:"jay",age:22},
+    {name:"dhyey",age:20}
+]
+let newemp=emp.find((n)=>n.age==22)
+console.log(newemp)
