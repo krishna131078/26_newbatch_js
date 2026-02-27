@@ -177,10 +177,71 @@ var users=[
 //     console.log(user.name+user.age)
 // })
 
-let newarr=users.map((user)=>{
-    return user.age +" "+user.id
-})
-console.log(newarr)
-array.forEach(element => {
+// let newarr=users.map((user)=>{
+//     return user.age +" "+user.id
+// })
+// console.log(newarr)
+// array.forEach(element => {
     
-});
+// });
+
+var data = [
+    {
+        name:"Google",
+        employees:[
+            {
+                id:101,
+                name:"Sundar pichay",
+                post:"CEO",
+                salary:123
+            },
+            {
+                id:102,
+                name:"Larry Page",
+                post:"Founder",
+                salary:190
+            },
+            {
+                id:103,
+                name:"Sergey Brin",
+                post:"Founder",
+                salary:180
+            }
+
+        ]
+    },
+    {
+        name:"Facebook",
+        employees:[
+            {
+                id:1001,
+                name:"Mark",
+                post:"CEO",
+                salary:145
+            },
+            {
+                id:1005,
+                name:"Zuke",
+                post:"Founder",
+                salary:180
+            }
+        ]
+    },
+]
+// const googlemps=data.find((emp)=>emp.name=="Google").employees.filter((e)=>e.post=="CEO")
+// console.log(googlemps)
+
+// const facebookemp=data.find((emp)=>emp.name=="Facebook").employees
+// console.log(facebookemp)
+// const totalsal=data.find((emp)=>emp.name=="Facebook").employees.reduce((a,b)=>a+b.salary,0)
+// console.log(totalsal)
+const allemp=data.flatMap((emp)=>{
+    return emp.employees.map((e)=>{
+        return e.name
+    })
+})
+console.log(allemp)
+
+// total salary google employyes
+// facebook---->id
+// company name and its employees count
